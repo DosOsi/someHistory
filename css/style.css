@@ -141,6 +141,9 @@ input.sideBarButton:checked + #sideBar + #sideBarPusher {
 #sideBar a.H3 {
     margin-left: 45px;
 }
+#sideBar a.H4 {
+    margin-left: 65px;
+}
 
 #sideBar a.H1::before {
     content: "• ";
@@ -149,6 +152,9 @@ input.sideBarButton:checked + #sideBar + #sideBarPusher {
     content: "⁃ ";
 }
 #sideBar a.H3::before {
+    content: "> ";
+}
+#sideBar a.H4::before {
     content: "‣ ";
 }
 
