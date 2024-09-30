@@ -49,8 +49,8 @@ main h3 {
     scroll-margin-top: 30px;
 }
 .domine {
-    font-family: "Domine", serif;
-    font-optical-sizing: auto;
+    /*font-family: "Comic Neue", cursive;*/
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -166,6 +166,52 @@ input.sideBarButton:checked + #sideBar + #sideBarPusher {
 .lil-number {
     font-size: 12px;
 }
+.main-container > h1 {
+    font-size: 75px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 23px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-container > div {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.main-container > div:hover > img {
+    border-radius: 45px;
+    filter:saturate(150%);
+}
+
+.main-container > div > img{
+    height: 100%;
+    border-radius: 15px;
+    transition: 0.5s border-radius;
+}
+.main-container > div > p {
+    position: relative;
+    top: -50%;
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin: 0px;
+}
+
 
 #banner {
     background-image: url("https://www.romecabs.com/upload/CONF99/20230604/Ancient_Rome_Glory_The_rise_and_fall_of_ancient_Roman_Empire.jpg");
